@@ -1,19 +1,13 @@
-# Agents instructions
+# Agent instructions
 
-## Rules
+## Workflow
 
-- Before do any edit read the Issue Aceptance Criteria and Decisions.
-- Propose a plan before do any change to files.
+- Verify always the Issue's acceptance criteria and Decisions before any edit.
+- Before any file is changed a proposed plan is required.
+- Use the smalles change that satisfy the criteria required..
+- Run `pytest -q` and report the results.
 
-## Requirements
+## Boundaries
 
-- Make sure the approach is to try that the smallest change satisfy de criteria.
-- Do not touch anything listed in the "Out of Scope" section.
-
-## Test
-
-- Execute "pytest -q" to run the test and report the results.
-
-## Out of Scope
-
-- Main system files modifications.
+- Do not touch anything listed under "Out of scope" in the issue.
+- Never modify `test_triage.py` or `.github/`.
